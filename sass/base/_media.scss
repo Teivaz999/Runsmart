@@ -1,0 +1,143 @@
+@media (max-width: 1200px) {
+  .header {
+    justify-content: space-around;
+  }
+  .promo__wrapper {
+    align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    &__contacts {
+      display: none;
+    }
+  }
+  .promo {
+    min-height: 625px;
+    padding-bottom: 60px;
+    &__wrapper {
+    margin-top: 50px;
+      }
+    &__icons {
+      margin-top: 45px;
+    }
+    }
+  .button_main {
+    margin-top: 50px;
+  }
+
+  .advantages {
+    padding: 45px 0 55px 0;
+    min-height: auto;
+    &__block {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+    &__subtitle {
+      margin-top: 15px;
+    }
+    &__descr {
+      margin-top: 10px;
+      width: 352px;
+    }
+  }
+  .title_left {
+    text-align: center;
+    font-size: 30px;
+  }
+  .consultation__descr {
+    text-align: center;
+  }
+  .feed-form {
+    margin: 0 auto;
+    margin-top:20px;
+  }
+  }
+
+  @media (max-width: 767px) {
+    .promo {
+      min-height: 565px;
+      padding-bottom: 40px;
+      &__header {
+        font-size: 35px;
+    }
+      &__subheader {
+        font-size: 20px;
+      }
+  }
+    .advantages {
+      padding-bottom: 0;
+      &__title {
+        font-size: 20px;
+      }
+    }
+    .consultation {
+      padding: 50px 0 40px 0;
+      min-height: 560px;
+      &__descr {
+        font-size: 17px;
+      }
+    }
+    .title_left {
+      font-size: 27px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .header {
+      flex-direction: column;
+      &__logo {
+        width: 280px;
+      }
+      &__official {
+        font-size: 15px;
+        margin-top: 15px;
+        span {
+          font-size: 25px;
+        }
+      }
+    }
+    .promo {
+      min-height: 530px;
+      &__header {
+        font-size: 25px;
+      }
+      &__subheader {
+        font-size: 13px;
+        margin-top: 0;
+      }
+      &__icons {
+        flex-direction: column;
+        margin-top: 30px;
+        }
+      &__icon {
+        margin-top: 20px;
+        &:nth-child(3) img {
+          padding-left: 10px;
+        }
+      }
+      &__link {
+        font-size: 14px;
+      }
+    }
+    .button_main {
+      width: 250px;
+      font-size: 14px;
+    }
+    .advantages__descr {
+      width: 280px;
+    }
+    .consultation {
+      padding: 30px 0 20px 0;
+      min-height: 540px;
+      &__descr {
+        font-size: 15px;
+      }
+    }
+    .title_left {
+      font-size: 22px;
+    }
+  }
+  
