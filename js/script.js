@@ -41,6 +41,7 @@ $(document).ready(function(){
     loop: true,
     autoplay: true,
     autoplayTimeout: 2000,
+    autoplayHoverPause:true,
     margin: 50,
     responsiveClass:true,
     responsive:{
