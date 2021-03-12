@@ -1,4 +1,8 @@
 @media (max-width: 1200px) {
+  .promo {
+    background: radial-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7) ), url(../img/bg/bg_top.png) center (center/cover) no-repeat;
+    background-position: -80px;
+  }
   .header {
     justify-content: space-around;
   }
@@ -17,7 +21,7 @@
     min-height: 625px;
     padding-bottom: 60px;
     &__wrapper {
-    margin-top: 50px;
+      margin-top: 50px;
       }
     &__icons {
       margin-top: 45px;
@@ -54,6 +58,51 @@
     margin: 0 auto;
     margin-top:20px;
   }
+  .owl-stage-outer {
+    width:600px;
+  }
+  .owl-carousel .item img {
+    width:600px;
+  }
+  .carousel {
+    height:620px;
+  }
+  .catalog {
+    padding-bottom: 70px;
+    &__content {
+      justify-content: center;
+    }
+    &-item {
+      margin:0 10px 20px 10px;
+    }
+    &__tabs {
+      margin-top: 30px;
+    }
+    &__tab {
+      width: 200px;
+      height: 40px;
+      line-height: 38px;
+    }
+    &__content {
+      margin-top: 40px;
+    }
+  }
+  .review {
+    &__item {
+      flex-direction: column;
+    }
+    &__subtitle {
+      text-align: center;
+      margin-top: 40px;
+    }
+    &__text {
+      width: 500px;
+      margin-left:0;
+      span {
+        text-align: center;
+      }
+    }
+  }
   }
 
   @media (max-width: 767px) {
@@ -82,6 +131,38 @@
     }
     .title_left {
       font-size: 27px;
+    }
+    .owl-stage-outer {
+      width:500px;
+    }
+    .owl-carousel .item img {
+      width:500px;
+    }
+    .carousel {
+      height:570px;
+    }
+    .catalog {
+      padding-bottom: 40px;
+      
+      &__content {
+        flex-direction: column;
+        align-items: center;
+      }
+      &__tabs {
+        margin-top: 15px;
+      }
+      &__tab {
+        width: 150px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 16px;
+      }
+      &__content {
+        margin-top: 20px;
+      }
+    }
+    .title {
+      font-size: 25px;
     }
   }
 
@@ -138,6 +219,43 @@
     }
     .title_left {
       font-size: 22px;
+    }
+    .owl-stage-outer {
+      width:300px;
+    }
+    .owl-carousel .item img {
+      width:300px;
+    }
+    .carousel {
+      height:420px;
+    }
+    .catalog {
+      &__tab {
+        width: 100px;
+        height: 40px;
+        line-height: 38px;
+        font-size: 10px;
+      }
+    }
+    .review {
+      padding-bottom: 30px;
+      &__wrapper {
+        margin-top: 25px;
+      }
+      &__subtitle {
+        font-size: 14px;
+      }
+      &__descr {
+        font-size: 12px;
+        width:300px;
+        margin:0 auto;
+      }
+      &__text {
+        text-align: center;
+        span {
+          font-size: 10px;
+        }
+      }
     }
   }
   

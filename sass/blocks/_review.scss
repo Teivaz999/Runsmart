@@ -1,0 +1,37 @@
+.review {
+  padding-bottom: 70px;
+  &__wrapper {
+    margin-top: 65px;
+  }
+  &__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  &:first-child {
+    margin-top: 0;
+  }
+  }
+  &__text {
+    margin-left: 60px;
+    span {
+      display: block;
+      font-size: 14px;
+      color: rgb(100, 100, 100); 
+      font-weight: 300;
+    }
+  }
+  img {
+    display: block;
+  }
+  &__subtitle {
+    font-size: 18px;
+    color: rgb(13, 13, 13);
+    font-weight: 700;
+  }
+  &__descr {
+    font-size: 16px;
+    color: rgb(13, 13, 13);
+    margin-top: 17px;  
+  }
+}
