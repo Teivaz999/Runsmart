@@ -107,6 +107,7 @@
 
   @media (max-width: 767px) {
     .promo {
+      background-position: -90px;
       min-height: 565px;
       padding-bottom: 40px;
       &__header {
@@ -167,6 +168,9 @@
   }
 
   @media (max-width: 575px) {
+    .promo {
+      background-position: -370px;
+    }
     .header {
       flex-direction: column;
       &__logo {
