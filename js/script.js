@@ -89,4 +89,35 @@ $('.button_mini').each(function(i) {
     $('.overlay, #order').fadeIn('slow');
   })
 })
+
+
+function valideForms(form) {
+  $(form).validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: "required",
+      email: {
+        required: true,
+        email: true
+    }
+  },
+  messages: {
+    name: {
+      required: "Введите ваше имя",
+      minlength: jQuery.validator.format("Введите больше {0} символов")
+    },
+    phone: "неверный формат номера",
+    email: {
+      required: "email нужен для связи с вами",
+      email: "некорректный email"
+    }
+  }
+  })
+}
+valideForms('#consultation-form');
+valideForms('#consultation form');
+valideForms('#order form');
 });

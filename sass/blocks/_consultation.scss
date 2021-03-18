@@ -7,4 +7,13 @@
     color: #fff;
     font-weight: 500;
   }
+  .error {
+    border:1px solid red;
+    margin-bottom: 15px;
+  }
+  label.error {
+    text-align: center;
+    color: #fff;
+    border:none;
+  }
 }

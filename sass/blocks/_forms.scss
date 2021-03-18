@@ -20,4 +20,13 @@
   &_mt25 {
     margin-top: 25px;
   }
+  .error {
+    text-align: center;
+    border:1px solid red;
+    margin-bottom: 15px;
+  }
+  label.error {
+    border:none;
+  }
 }
+
