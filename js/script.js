@@ -1,37 +1,3 @@
-/* $(document).ready(function(){
-  $('.carousel__inner').slick({
-    speed: 1200,
-    adaptiveHeight: true, 
-    prevArrow: '<button type="button" class="slick-prev"><img src="icons/chevron-left-solid.png"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="icons/chevron-right-solid.png"></button>',
-responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          dots: true,
-          arrows: false
-        }
-      }
-    ]
-  });
-}); */
-/* const slider = tns({
-  container: '.carousel__inner',
-  items: 1,
-  slideBy: 'page',
-  autoplay: false,
-  controls: false,
-  nav: false
-});
-document.querySelector('.prev').addEventListener('click', function () {
-  slider.goTo('prev');
-});
-document.querySelector('.next').addEventListener('click', function () {
-  slider.goTo('next');
-}); */
-/* $('.carousel').carousel({
-  interval: false
-}) */
 $(document).ready(function(){
 
   $(".owl-carousel").owlCarousel({
@@ -88,7 +54,7 @@ $('.button_mini').each(function(i) {
     $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
     $('.overlay, #order').fadeIn('slow');
   })
-})
+});
 
 
 function valideForms(form) {
@@ -115,9 +81,43 @@ function valideForms(form) {
       email: "некорректный email"
     }
   }
-  })
+  });
 }
 valideForms('#consultation-form');
 valideForms('#consultation form');
 valideForms('#order form');
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "/mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn('slow');
+
+      $('form').trigger('reset');
+  });
+  return false;
+});
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1600) {
+    $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+});
+
+$("a[href^='#up']").click(function(){
+  const _href = $(this).attr("href");
+  $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+  return false;
+});
+
+new WOW().init();
 });

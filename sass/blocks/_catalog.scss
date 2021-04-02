@@ -46,6 +46,7 @@
     }
   }
   &-item {
+    position:relative;
     width: 300px;
     min-height: 440px;
     border: 2px solid rgb(232, 232, 232);
@@ -67,7 +68,7 @@
     }
     &__descr {
       margin-top: 16px;
-      font-size: 14px;
+      font-size: 15px;
       color: rgb(13, 13, 13); 
       font-weight: 300;
       text-align: center;
@@ -123,6 +124,10 @@
         margin-right: 20px;
       }
     }
+    &__adv {
+      list-style: none;
+      padding-left:0;
+    }
     &__list {
       width:50%;
       margin-left: 20px;
@@ -156,7 +161,7 @@
     &__back {
       display: block;
       position:absolute;
-      bottom:0;
+      bottom:0px;
       font-size: 14px;
       left:50%;
       transform: translateX(calc(-50% - 19px));
